@@ -65,7 +65,7 @@ local loader=''
 if getgenv().NATestingVer then
 	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NA%20testing.lua"))();]]
 else
-	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))();]]
+	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/FuturisticSearch/Nameless-Admin-3.0/refs/heads/main/Source.lua"))();]]
 end
 local queueteleport=(syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or function() end
 
