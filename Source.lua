@@ -13,10 +13,10 @@ NACaller(function() getgenv().RealNamelessLoaded=true end)
 NACaller(function() getgenv().NATestingVer=false end)
 
 --[[ Version ]]--
-local curVer=3.0
+local curVer=3.1
 
 --[[ Brand ]]--
-local mainName='Qirky CMD'
+local mainName='QuirkyCMD Admin'
 local testingName='QCMD Testing'
 local adminName='QCMD'
 if getgenv().NATestingVer then
@@ -97,7 +97,7 @@ local function DoNotif(txt,dur,naem)
 	});
 end
 
-wait();--added wait due to the Http being a bit delayed on returning (should fix the issue where Nameless Admin wouldn't load sometimes)
+wait();--added wait due to the Http being a bit delayed on returning (should fix the issue where Quirky CMD wouldn't load sometimes)
 
 --Custom file functions checker checker
 local CustomFunctionSupport=isfile and isfolder and writefile and readfile and listfiles;
@@ -1406,12 +1406,12 @@ cmd.add({"serverremotespy","srs","sremotespy"},{"serverremotespy (srs,sremotespy
 	loadstring(game:HttpGet("https://github.com/ltseverydayyou/uuuuuuu/blob/main/Server%20Spy.lua?raw=spy"))()
 end)
 
-cmd.add({"updatelog","updlog","updates"},{"updatelog (updlog,updates)","show the update logs for Nameless Admin"},function()
+cmd.add({"updatelog","updlog","updates"},{"updatelog (updlog,updates)","show the update logs for QuirkyCMD"},function()
 	--loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/uuuuuuu/main/Game%20Universe%20Viewer"))()
 	gui.updateLogs()
 end)
 
-cmd.add({"discord"},{"discord","Copy an invite link to the official Nameless Admin V2 discord server"},function()
+cmd.add({"discord"},{"discord","Copy an invite link to the official QuirkyCMD V2 discord server"},function()
 	if setclipboard then 
 		setclipboard('https://discord.gg/zS7TpV3p64')
 		DoNotif('Copied the discord invite link!',4)
@@ -4685,9 +4685,9 @@ cmd.add({"admin"},{"admin","whitelist someone to allow them to use commands"},fu
 	local Player=getPlr(...)
 	if Player~=nil and not Admin[Player.UserId] then
 		Admin[Player.UserId]={Player=Player}
-		ChatMessage("[Nameless Admin] You've got admin. Prefix: ';'",Player.Name)
+		ChatMessage("[QuirkyCMD] You've got admin. Prefix: ';'",Player.Name)
 		wait(0.2)
-		ChatMessage("[Nameless Admin Commands] glue,unglue,fling,fling2,spinfling,unspinfling,fcd,fti,fpp,fireremotes,holdhat",Player.Name)
+		ChatMessage("[QCMD Commands] glue,unglue,fling,fling2,spinfling,unspinfling,fcd,fti,fpp,fireremotes,holdhat",Player.Name)
 		ChatMessage("reset,commitoof,seizure,unseizure,toolorbit,lay,fall,toolspin,hatspin,sit,joke,kanye",Player.Name)
 		DoNotif(Player.Name.." has now been whitelisted to use commands",15)
 	else
@@ -6981,7 +6981,7 @@ cmd.add({"antichatlogger","acl"},{"antichatlogger (acl)","Anti chat logger"},fun
 	TextLabel_2.Position=UDim2.new(0.0269662924,0,0.162698418,0)
 	TextLabel_2.Size=UDim2.new(0,421,0,115)
 	TextLabel_2.Font=Enum.Font.SourceSans
-	TextLabel_2.Text="You are executing an anti-chat-log script meaning that Nameless Admin wouldnt be able to detect when you have chatted meaning if you are on mobile and use the chat to execute commands it wont work. Are you sure you want to execute this?"
+	TextLabel_2.Text="You are executing an anti-chat-log script meaning that QuirkyCMD wouldnt be able to detect when you have chatted meaning if you are on mobile and use the chat to execute commands it wont work. Are you sure you want to execute this?"
 	TextLabel_2.TextColor3=Color3.fromRGB(255,255,255)
 	TextLabel_2.TextScaled=true
 	TextLabel_2.TextSize=14.000
