@@ -13,12 +13,12 @@ NACaller(function() getgenv().RealNamelessLoaded=true end)
 NACaller(function() getgenv().NATestingVer=false end)
 
 --[[ Version ]]--
-local curVer=2.2
+local curVer=3.0
 
 --[[ Brand ]]--
-local mainName='Nameless Admin'
-local testingName='NA Testing'
-local adminName='NA'
+local mainName='Qirky CMD'
+local testingName='QCMD Testing'
+local adminName='QCMD'
 if getgenv().NATestingVer then
 	adminName=testingName
 else
