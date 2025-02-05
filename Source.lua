@@ -63,7 +63,7 @@ if not game:IsLoaded() then
 end
 local loader=''
 if getgenv().NATestingVer then
-	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NA%20testing.lua"))();]]
+	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/FuturisticSearch/Nameless-Admin-3.0/main/NA%20testing.lua"))();]]
 else
 	loader=[[loadstring(game:HttpGet("https://raw.githubusercontent.com/FuturisticSearch/Nameless-Admin-3.0/refs/heads/main/Source.lua"))();]]
 end
@@ -216,6 +216,8 @@ _G.NAadminsLol={
 	2624269701;--Akim
 	2502806181; -- null
 	1594235217; -- Purple
+	7845018603; --1x1x1x1sReturnCame2
+	7134017900; --1x1x1x1sReturnCame
 }
 
 if UserInputService.TouchEnabled then
@@ -250,21 +252,13 @@ local msg={
 
 --[[ Goofy Text ]]--
 local Goofer={
-	"Egg";
-	"i am a goofy goober";
-	"mmmm lasagna";
-	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-	"i am wondering if i even have a life";
-	"[REDACTED]";
-	"hey guys welcome to another video";
-	"⚠️⚠️⚠️";
-	":-(";
-	"(╯°□°)╯︵ ┻━┻";
-	"freaky";
-	"unreal";
-	"💀💀💀";
-	"X_X";
-	"not bothered to add a message here";
+	"Client sided version of QuirkyCMD loaded goober";
+	"Client sided version of QuirkyCMD loaded guys";
+	"Client sided version of QuirkyCMD loaded wooooo";
+	"Client sided version of QuirkyCMD loaded AAAAAAAAAAAAAAAAAAAAAAA";
+	"Client sided version of QuirkyCMD loaded omg";
+	"Client sided version of QuirkyCMD loaded 💀💀💀";
+	
 }
 
 --[[ Prediction ]]--
@@ -1337,9 +1331,9 @@ cmd.add({"lag"},{"lag <player>","Chat lag"},function()
 	end
 end)
 
-	--[[cmd.add({"plugins"},{"plugins","Check what kind of plugins you have,add plugins using a gui,delete a plugin."},function()
+	cmd.add({"plugins"},{"plugins","Check what kind of plugins you have,add plugins using a gui,delete a plugin."},function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NamelessAdminPlugin"))();
-	end)]]
+	end)
 
 	cmd.add({"prefix"},{"prefix <prefix>","Changes the admin prefix"},function(...)
 		local PrefixChange = (...)
@@ -1736,9 +1730,9 @@ cmd.add({"commands","cmds"},{"commands (cmds)","Open the command list"},function
 	gui.commands()
 end)
 
---[[cmd.add({"adonisfinder","adfind"},{"adonis finder (adfind)","Lets you see if the game has adonis admin"},function()
+cmd.add({"adonisfinder","adfind"},{"adonis finder (adfind)","Lets you see if the game has adonis admin"},function()
 	loadstring(game:HttpGet("https://github.com/ltseverydayyou/Nameless-Admin/blob/main/AdonisScanner.lua?raw=adonfind"))()
-end)]]
+end)
 --Mobile Commands for the screen
 if IsOnMobile then
 
@@ -2833,10 +2827,10 @@ cmd.add({"fpsbooster","lowgraphics","boostfps","lowg"},{"fpsbooster (lowgraphics
 	end)
 end)
 
-	--[[cmd.add({"vr","clovr","vrscript","fevr"},{"vr (clovr,vrscript,fevr)","FE VR SCRIPT AKA CLOVR"},function()
+	cmd.add({"vr","clovr","vrscript","fevr"},{"vr (clovr,vrscript,fevr)","FE VR SCRIPT AKA CLOVR"},function()
 		--should be patched--
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/CloVR"))();
-	 end)]]
+	 end)
 
 cmd.add({"antilag","boostfps"},{"antilag (boostfps)","Low Graphics"},function()
 	_G.Settings={
