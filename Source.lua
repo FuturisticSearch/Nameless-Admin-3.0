@@ -182,7 +182,7 @@ local curVer = isAprilFools() and Format("%d.%d.%d", math.random(1, 10), math.ra
 
 --[[ Brand ]]--
 local mainName = 'Vojta Admin'
-local testingName = 'VA Testing'
+local testingName = 'Vojta Admin'
 local adminName = 'VA'
 
 -- Returns a single randomized name with the appropriate suffix
