@@ -250,13 +250,11 @@ end
 if getgenv().NATestingVer then
 	if isAprilFools() then
 		testingName = yayApril(true)
-		testingName = MockText(testingName)
 	end
 	adminName = testingName
 else
 	if isAprilFools() then
-		mainName = yayApril(false)
-		mainName = MockText(mainName)
+		mainName = yayApril(false) 
 	end
 	adminName = mainName
 end
