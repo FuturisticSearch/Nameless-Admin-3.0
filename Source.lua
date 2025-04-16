@@ -181,9 +181,9 @@ end
 local curVer = isAprilFools() and Format("%d.%d.%d", math.random(1, 10), math.random(0, 99), math.random(0, 99)) or "2.4"
 
 --[[ Brand ]]--
-local mainName = 'Nameless Admin'
-local testingName = 'NA Testing'
-local adminName = 'NA'
+local mainName = 'Vojta Admin'
+local testingName = 'VA Testing'
+local adminName = 'VA'
 
 -- Returns a single randomized name with the appropriate suffix
 function yayApril(isTesting: boolean)
